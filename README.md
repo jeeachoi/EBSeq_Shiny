@@ -23,7 +23,7 @@ To launch EBSeq Shiny GUI, in R run:
 
 > runGitHub('jeeachoi/EBSeq')
 
-![Screenshot](https://github.com/jeeachoi/EBSeq/blob/master/EBSeqShiny.png)
+![Screenshot](https://github.com/jeeachoi/EBSeq/EBSeqShiny.png)
 
 ## 2. Input files
 
