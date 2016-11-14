@@ -27,7 +27,7 @@ shinyUI(pageWithSidebar(
                                    selected = 1),
                       # patterns of interest
                       textInput("InterestPatt", 
-                                label="Patterns of interest for - comma delimited (e.g. if you're interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default is all possible patterns.)", 
+                                label="Patterns of interest - comma delimited (e.g. if you're interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default is all possible patterns.)", 
                                 value = ""),
                       # Num EM
                       numericInput("EMiter",
