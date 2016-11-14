@@ -43,7 +43,7 @@ All the example files can be found at https://github.com/jeeachoi/EBSeq_Shiny/tr
 
 - Need normalization?: If Yes, normalization using median-by-ratio will be performed prior to the EBSeq run. If the input matrix is already normalized (e.g. by median-by-ratio normalization or TMM), this option should be disabled by selecting No. In addition, if the input expression matrix only contains a small subset of genes, it is suggested to first perform the normalization using all genes before taking the subset
 
-- Patterns of interest: This is used for (gene/isoform) multi-condition analysis only. User can use EBSeqMultiPattern_Shiny (https://github.com/jeeachoi/EBSeqMultiPattern_Shiny) to obtain all possible patterns and choose the patterns of interest. If the user is interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default will provide result of all possible patterns
+- Patterns of interest: This is used for (gene/isoform) multi-condition analysis only. User can use EBSeqMultiPattern_Shiny (https://github.com/jeeachoi/EBSeq_MultiPattern) to obtain all possible patterns and choose the patterns of interest. If the user is interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default will provide result of all possible patterns
 
 - The number of iteration for EM algorithm: Default is 5
 
