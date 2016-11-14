@@ -1,18 +1,9 @@
 # EBSeq
+EBSeq: An R package for RNA-Seq Differential Expression Analysis https://www.biostat.wisc.edu/~kendzior/EBSEQ/
 
-EBSeq R package and its vignette could be found at 
-https://github.com/lengning/EBSeq
+The latest release version could be found at: http://www.bioconductor.org/packages/devel/bioc/html/EBSeq.html 
 
-To install EBSeq, in R run: 
-
-> install.packages("devtools")
-
-> library(devtools)
-
-> install_github("lengning/EBSeq/package/EBSeq")
-
-Or install locally.
-
+EBSeq github page: https://github.com/lengning/EBSeq
 
 ### Run the app
 To launch EBSeq Shiny GUI, in R run:
@@ -50,18 +41,22 @@ All the example files can be found at https://github.com/jeeachoi/EBSeq_Shiny/tr
 
 ## 3. Customize options
 
+- Need normalization?: If Yes, normalization using median-by-ratio will be performed prior to the EBSeq run. If the input matrix is already normalized (e.g. by median-by-ratio normalization or TMM), this option should be disabled by selecting No. In addition, if the input expression matrix only contains a small subset of genes, it is suggested to first perform the normalization using all genes before taking the subset
+
+- Patterns of interest: This is used for (gene/isoform) multi-condition analysis only. User can use EBSeqMultiPattern_Shiny (https://github.com/jeeachoi/EBSeqMultiPattern_Shiny) to obtain all possible patterns and choose the patterns of interest. If the user is interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default will provide result of all possible patterns
+
 - The number of iteration for EM algorithm: Default is 5
 
-- Need normalization?: If Yes, normalization using median-by-ratio will be performed prior to the EBSeq run. If the input matrix is already normalized (e.g. by median-by-ratio normalization or TMM), this option should be disabled by selecting No. In addition, if the input expression matrix only contains a small subset of genes, it is suggested to first perform the normalization using all genes before taking the subset.
+- Target FDR: Default is 0.05 (5%). Target FDR will be used to determin DE genes
 
 
 ## 4. Outputs
 Four to five files will be generated:
--	normalized.csv: normalized expression matrix with genes in row and cells in column.
-- info.txt: version information with all input variables are stored.
+-	normalized.csv: normalized expression matrix with genes in row and cells in column
+- info.txt: version information with all input variables are stored
 
 For two-condition analysis:
-- DEListSortedbyPPDE_TwoCond.csv: DE genes only (FDR cutoff) sorted by PPDE
+- DEListSortedbyPPDE_TwoCond.csv: DE genes only (FDR cutoff) sorted by PPDE, followed by Real FC, posterior FC, and normalized expression values
 - OutputSortedbyPPDE_TwoCond.csv: Output with sorted gene order by PPDE, followed by Real FC, posterior FC, and normalized expression values
 - OutputOrigFileOrder_TwoCond.csv: Output with original gene order from input file, followed by Real FC, posterior FC, and normalized expression values
 
