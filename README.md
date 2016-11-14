@@ -39,9 +39,11 @@ The third input file is the Isoform vector. It can be csv or tab delimited file.
 
 ### Example files
 An example input file for two-condition gene analysis **GeneMat.csv**, **CondTwo.csv**
+
 An example input file for two-condition Isoform analysis **IsoMat.csv**, **IsoAndGeneNames.csv**, **CondTwo.csv** 
 
 An example input file for multi-condition gene analysis **MultiGeneMat.csv**, **CondMulti.csv**
+
 An example input file for multi-condition Isoform analysis **IsoMultiMat.csv**, **IsoAndGeneNamesMulti.csv**, **IsoMultiCond.csv** 
 
 All the example files can be found at https://github.com/jeeachoi/EBSeq_Shiny/tree/master/example_data   
