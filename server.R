@@ -1,7 +1,7 @@
 library(shiny)
 library(shinyFiles)
 library(EBSeq)
-library(gdata)
+#library(gdata)
 #library(colourpicker)
 
 # Define server logic for slider examples
