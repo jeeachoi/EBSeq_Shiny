@@ -6,6 +6,18 @@ The latest release version could be found at: http://www.bioconductor.org/packag
 EBSeq github page: https://github.com/lengning/EBSeq
 
 ### Run the app
+To run the WaveCrest graphical user interface (GUI), it requires the following packages: shiny, shinyFiles, EBSeq
+
+R version ≥ 3.0.2 is needed. For mac user, make sure whether xcode is installed.
+
+To install the shiny and EBSeq packages, in R run:
+
+install.packages("shiny")
+
+install.packages("shinyFiles")
+
+install.packages("EBSeq")
+
 To launch EBSeq Shiny GUI, in R run:
 
 > library(shiny)
@@ -63,9 +75,6 @@ For two-condition analysis:
 For multiple-condition analysis:
 - OutputPP_MultiCond.csv: Output with posterior probability of being in each pattern, followed by Real FC, posterior FC, and normalized expression values
 - OutputMAP_MultiCond.csv: The most likely pattern of each gene
-
-## Note
-The 'create new folder' button in the output folder selection pop-up is disfunctional right now
 
 ## License
 This project is licensed under the terms of the Apache License 2.0
