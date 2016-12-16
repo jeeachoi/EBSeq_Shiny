@@ -6,9 +6,9 @@ The latest release version could be found at: http://www.bioconductor.org/packag
 EBSeq github page: https://github.com/lengning/EBSeq
 
 ### Run the app
-To run the WaveCrest graphical user interface (GUI), it requires the following packages: shiny, shinyFiles, EBSeq
+To run the EBSeq graphical user interface (GUI), it requires the following packages: shiny, shinyFiles, EBSeq
 
-R version ≥ 3.0.2 is needed. For mac user, make sure whether xcode is installed.
+R version ≥ 3.0.0 is needed. For mac user, make sure whether xcode is installed.
 
 To install the shiny and EBSeq packages, in R run:
 
