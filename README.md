@@ -30,14 +30,14 @@ To launch EBSeq Shiny GUI, in R run:
 
 ## 2. Input files
 
-The first input file should be the expression matrix, with genes in rows and cells as columns. 
-Currently, only takes csv files or tab delimited file are accepted.
+The first input file should be a expression matrix, with genes in rows and cells as columns. 
+Currently, EBSeq_Shiny accepts csv files or tab delimited files.
 The input file will be treated as a tab delimited file if the suffix is not '.csv'.
 
-The second input file is the Condition vector. The conditions could be time points, spatial positions, etc. 
-It can be csv or tab delimited file. The file should contain 1 column. Each element of the should represent the corresponding condition that each cell belongs to, it should match exactly the order of columns in the expression matrix and be the same length. 
+The second input file is a condition vector. The conditions could be time points, spatial positions, etc. 
+The csv or tab delimited file formats are acceptable. The file should contain 1 column. Each element of the condition vector file should represent the corresponding condition that each cell belongs to, which matches the order of columns in the expression matrix with the same length. 
 
-The third input file is the Isoform vector. It can be csv or tab delimited file. The file should contain
+The third input file is the a Isoform vector. It can be csv or tab delimited files. The file should contain
 1st column with isoform names and 2nd column with gene names. If Isoform vector file is not provided, gene analysis will be performed automatically.
 
 ### Example files
@@ -55,11 +55,11 @@ All the example files can be found at https://github.com/jeeachoi/EBSeq_Shiny/tr
 
 - Need normalization?: If Yes, normalization using median-by-ratio will be performed prior to the EBSeq run. If the input matrix is already normalized (e.g. by median-by-ratio normalization or TMM), this option should be disabled by selecting No. In addition, if the input expression matrix only contains a small subset of genes, it is suggested to first perform the normalization using all genes before taking the subset
 
-- Patterns of interest: This is used for (gene/isoform) multi-condition analysis only. User can use EBSeqMultiPattern_Shiny (https://github.com/jeeachoi/EBSeq_MultiPattern) to obtain all possible patterns and choose the patterns of interest. If the user is interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3'. Default will provide result of all possible patterns
+- Patterns of interest: This can be used for (gene/isoform) multi-condition analysis only. User can use EBSeqMultiPattern_Shiny (https://github.com/jeeachoi/EBSeq_MultiPattern) to obtain all possible patterns and choose the patterns of interest. If the user is interested in pattern 1,2,3 from the MultiPattern output, type: '1,2,3' (no space, only ","separated). Default will provide results of all possible patterns
 
 - The number of iteration for EM algorithm: Default is 5
 
-- Target FDR: Default is 0.05 (5%). Target FDR will be used to determin DE genes
+- Target FDR: Default is 0.05 (5%). Target FDR will be used to determine DE genes
 
 
 ## 4. Outputs
