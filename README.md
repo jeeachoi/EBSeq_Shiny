@@ -12,11 +12,24 @@ R version ≥ 3.0.0 is needed. For mac user, make sure whether xcode is installe
 
 To install the shiny and EBSeq packages, in R run:
 
-install.packages("shiny")
+> install.packages("shiny")
 
-install.packages("shinyFiles")
+> install.packages("shinyFiles")
 
-install.packages("EBSeq")
+To install EBSeq, in R run: 
+
+> install.packages("devtools")
+
+> library(devtools)
+
+> install_github("lengning/EBSeq/package/EBSeq")
+
+Or
+
+> install.packages("EBSeq")
+
+Or install locally.
+
 
 To launch EBSeq Shiny GUI, in R run:
 
