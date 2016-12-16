@@ -76,6 +76,9 @@ For multiple-condition analysis:
 - OutputPP_MultiCond.csv: Output with posterior probability of being in each pattern, followed by Real FC, posterior FC, and normalized expression values
 - OutputMAP_MultiCond.csv: The most likely pattern of each gene
 
+## Note
+User should select a "Output Folder" in the GUI
+
 ## License
 This project is licensed under the terms of the Apache License 2.0
 
